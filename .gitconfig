@@ -1,0 +1,7 @@
+[user]
+	email = jameshfisher@gmail.com
+	name = Jim Fisher
+[push]
+	default = simple
+[url "git@github.com:"]
+	insteadOf = https://github.com/
