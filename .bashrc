@@ -1,5 +1,5 @@
 # [jim@jf-macbook-pro:~/foo]
-export PS1="[\u@\h:\e[30;1m\w\e[0m]\n\$ "
+export PS1="\e[1m[\u@\h:\w]\n\$\e[m "
 
 alias gst="git status"
 alias gd="git diff"
@@ -8,3 +8,5 @@ alias gfa="git fetch --all --prune"
 alias gmom="git merge origin/master"
 
 alias serve="python -m SimpleHTTPServer"
+
+alias l="ls -la"
