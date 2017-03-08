@@ -1,5 +1,6 @@
-# [jim@jf-macbook-pro:~/foo]
-export PS1="\e[1m[\u@\h:\w]\n\$\e[m "
+# jim@Jims-MacBook-Pro:~/dotfiles
+# $ echo foo
+export PS1="\e[1m\u@\h:\w\n\$\e[m "
 
 alias gst="git status"
 alias gd="git diff"
