@@ -1,6 +1,10 @@
+git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # jim@Jims-MacBook-Pro:~/dotfiles
 # $ echo foo
-export PS1="\e[1m\u@\h:\w\n\$\e[m "
+export PS1="\e[1m\u@\h:\w\$(git_branch)\n\$\e[m "
 
 alias gst="git status"
 alias gd="git diff"
