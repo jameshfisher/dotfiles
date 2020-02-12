@@ -34,6 +34,9 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 export GOPATH=~/go
 
+# https://support.apple.com/kb/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
