@@ -1,7 +1,8 @@
 [user]
 	email = jameshfisher@gmail.com
 	name = Jim Fisher
+	signingkey = 0C99B6534D90BDFC
 [push]
 	default = simple
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
