@@ -52,6 +52,9 @@ alias gpn="git push --set-upstream origin head && hub pull-request"
 alias gp="git push"
 alias gb="git checkout -b"
 
+alias nrb="npm run build"
+alias nrs="npm run start"
+
 alias serve="python -m SimpleHTTPServer"
 
 alias ll="ls -lh"
@@ -66,3 +69,7 @@ fi
 eval "$(rbenv init -)"
 
 source ~/dev/jameshfisher/jameshfisher.com/bashrc.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
