@@ -16,6 +16,7 @@ function screenshot {
 
 export PS1="\e[1m\w\$(git_branch)\e[0m\n\$ "
 
+# Prefer $HOME over literal ~ in $PATH - not all systems respect ~
 export PATH=""
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/bin"
@@ -25,11 +26,11 @@ export PATH="$PATH:/bin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/X11/bin"
-export PATH="$PATH:~/.cargo/bin"
-export PATH="$PATH:~/go/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin"
-export PATH="$PATH:~/.local/bin"
-export PATH="$PATH:~/dev/jameshfisher/encrypted-diary"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/dev/jameshfisher/encrypted-diary"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 export GOPATH=~/go
