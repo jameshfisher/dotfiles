@@ -1,8 +1,7 @@
 [user]
 	email = jameshfisher@gmail.com
 	name = Jim Fisher
-	signingkey = 0C99B6534D90BDFC
+[core]
+	editor = code --wait
 [push]
-	default = simple
-[commit]
-	gpgsign = true
+	default = current
