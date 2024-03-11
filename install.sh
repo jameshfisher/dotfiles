@@ -1,4 +1,5 @@
 #!/bin/bash
-ln -s dotfiles/.bashrc ~/.bashrc
-ln -s dotfiles/.bash_profile ~/.bash_profile
-ln -s dotfiles/.gitconfig ~/.gitconfig
+BASHRC_PATH=$(realpath .bashrc)
+echo "source $BASHRC_PATH" >> ~/.bashrc
+echo "source $BASHRC_PATH" >> ~/.zshrc
+cp ./.gitconfig ~/.gitconfig
