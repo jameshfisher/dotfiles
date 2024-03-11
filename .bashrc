@@ -10,7 +10,8 @@ function screenshot {
   mv "${HOME}/Desktop/$(ls "${HOME}/Desktop" | grep -E "^Screen Shot .*\.png$" | sort -n | tail -1)" $1
 }
 
-export PS1="\e[1m\w\$(git_branch)\e[0m\n\$ "
+export PROMPT="%{$fg[green]%}%~%{$fg_bold[blue]%} $(git_prompt_info)%{$reset_color%}
+> "
 
 alias ..='cd ..'
 alias ...='cd ../..'
