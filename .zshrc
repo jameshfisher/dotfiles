@@ -1,3 +1,9 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git nvm)
+zstyle ':omz:plugins:nvm' autoload yes
+source $ZSH/oh-my-zsh.sh
+
 function git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
