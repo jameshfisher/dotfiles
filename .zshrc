@@ -34,7 +34,7 @@ alias gpn="git push --set-upstream origin head && hub pull-request"
 alias gp="git push"
 alias gb="git checkout -b"
 
-alias serve="python -m SimpleHTTPServer"
+alias serve="python3 -m http.server"
 
 alias ll="ls -lh"
 
